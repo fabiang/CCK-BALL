@@ -5,7 +5,7 @@ manifest:
     - name: DoctorWangWang
       url-base: https://github.com/DoctorWangWang
     - name: zmk-locales
-      url-base: https://github.com/joelspadin/zmk-locales
+      url-base: https://github.com/joelspadin
   projects:
     - name: zmk
       remote: zmkfirmware
