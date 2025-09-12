@@ -56,24 +56,24 @@
 &kp TAB           &kp DE_Q       &kp DE_W      &kp DE_E    &kp DE_R   &kp DE_T   &kp DE_Z   &kp DE_U   &kp DE_I      &kp DE_O        &kp DE_P         &kp DE_U_UMLAUT
 &kp CAPSLOCK      &kp DE_A       &kp DE_S      &kp DE_D    &kp DE_F   &kp DE_G   &kp DE_H   &kp DE_J   &kp DE_K      &kp DE_L        &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
 &kp LEFT_SHIFT    &kp DE_Y       &kp DE_X      &kp DE_C    &kp DE_V   &kp DE_B   &kp DE_N   &kp DE_M   &kp DE_COMMA  &kp DE_DOT      &kp UP_ARROW     &kp DE_MINUS
-&kp LEFT_CONTROL  &kp RIGHT_WIN  &kp LEFT_ALT  &kp DELETE  &none      &none      &none      &kp SPACE  &kp ENTER     &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW
+&kp LEFT_CONTROL  &kp RIGHT_WIN  &kp LEFT_ALT  &kp DELETE  &md 1      &none      &none      &kp SPACE  &kp ENTER     &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-//        QWERTZ_EXTRA {
+        QWERTZ_EXTRA {
             // &kp DE_ACUTE
-//            bindings = <
-//&kp DE_CARET      &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_SECTION  &kp DE_DOUBLE_QUOTES  &kp DE_PERCENT  &kp DE_AMPERSAND  &kp DE_SLASH  &kp DE_LEFT_PARENTHESIS  &kp DE_LEFT_PARENTHESIS &kp DE_EQUAL     &kp DE_ESZETT
-//&trans            &kp DE_AT           &trans                &kp DE_EURO     &trans                &trans          &trans            &trans        &trans                   &trans                  &trans           &kp DE_PLUS
-//&trans            &trans              &trans                &trans          &trans                &trans          &trans            &trans        &trans                   &trans                  &trans           &trans
-//&trans            &kp DE_LESS_THAN    &trans                &trans          &trans                &trans          &trans            &trans        &trans                   &trans                  &trans           &trans
-//&kp LEFT_CONTROL  &kp RIGHT_WIN       &kp LEFT_ALT          &kp DELETE      &mo 1                 &mo 2           &mo 3             &kp SPACE     &kp ENTER                &kp LEFT_ARROW          &kp DOWN_ARROW   &kp RIGHT_ARROW
-//            >;
-//
-//            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-//        };
+            bindings = <
+&kp DE_CARET      &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_SECTION  &kp DE_DOUBLE_QUOTES  &kp DE_PERCENT  &kp DE_AMPERSAND  &kp DE_SLASH  &kp DE_LEFT_PARENTHESIS  &kp DE_LEFT_PARENTHESIS &kp DE_EQUAL     &kp DE_ESZETT
+&trans            &kp DE_AT           &trans                &kp DE_EURO     &trans                &trans          &trans            &trans        &trans                   &trans                  &trans           &kp DE_PLUS
+&trans            &trans              &trans                &trans          &trans                &trans          &trans            &trans        &trans                   &trans                  &trans           &trans
+&trans            &kp DE_LESS_THAN    &trans                &trans          &trans                &trans          &trans            &trans        &trans                   &trans                  &trans           &trans
+&kp LEFT_CONTROL  &kp RIGHT_WIN       &kp LEFT_ALT          &kp DELETE      &mo 1                 &mo 2           &mo 3             &kp SPACE     &kp ENTER                &kp LEFT_ARROW          &kp DOWN_ARROW   &kp RIGHT_ARROW
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
 
 //        F_LAYER {
 //&kp F12  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6     &kp F7     &kp F8  &kp F9  &kp F10  &kp F11
