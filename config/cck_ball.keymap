@@ -67,8 +67,8 @@
 &kp DE_CARET      &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_SECTION  &kp DE_DOLLAR  &kp DE_PERCENT  &kp DE_AMPERSAND  &kp DE_SLASH  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS &kp DE_EQUAL     &kp DE_ESZETT
 &trans            &kp DE_AT           &trans                &kp DE_EURO     &trans         &trans          &trans            &trans        &trans                   &trans                   &trans           &kp DE_PLUS
 &trans            &trans              &trans                &trans          &trans         &trans          &trans            &trans        &trans                   &trans                   &trans           &kp DE_GRAVE
-&trans            &kp DE_LESS_THAN    &trans                &trans          &trans         &trans          &trans            &trans        &trans                   &kp HOME                 &kp PG_UP        &trans
-&kp LEFT_CONTROL  &kp LEFT_WIN        &kp LEFT_ALT          &mkp MCLK       &mo 1          &mo 2           &mo 3             &mkp LCLK     &mkp RCLK                &kp END                  &kp PG_DN        &trans
+&trans            &kp DE_LESS_THAN    &trans                &trans          &trans         &trans          &trans            &trans        &trans                   &kp HOME                 &kp PG_UP        &kp DE_BACKSLASH
+&kp LEFT_CONTROL  &kp LEFT_WIN        &kp LEFT_ALT          &mkp MCLK       &mo 1          &mo 2           &mo 3             &mkp LCLK     &mkp RCLK                &kp END                  &kp PG_DN        &kp DE_PIPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
