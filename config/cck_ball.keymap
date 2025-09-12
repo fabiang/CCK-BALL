@@ -67,8 +67,8 @@
 &kp DE_CARET      &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_SECTION  &kp DE_DOLLAR  &kp DE_PERCENT  &kp DE_AMPERSAND  &kp DE_SLASH  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS &kp DE_EQUAL     &kp DE_ESZETT
 &trans            &kp DE_AT           &trans                &kp DE_EURO     &trans         &trans          &trans            &trans        &trans                   &trans                   &trans           &kp DE_PLUS
 &trans            &trans              &trans                &trans          &trans         &trans          &trans            &trans        &trans                   &trans                   &trans           &kp DE_GRAVE
-&trans            &kp DE_LESS_THAN    &trans                &trans          &trans         &trans          &trans            &trans        &trans                   &HOME                    &PG_UP           &trans
-&kp LEFT_CONTROL  &kp LEFT_WIN        &kp LEFT_ALT          &mkp MCLK       &mo 1          &mo 2           &mo 3             &mkp LCLK     &mkp RCLK                &END                     &PG_DN           &trans
+&trans            &kp DE_LESS_THAN    &trans                &trans          &trans         &trans          &trans            &trans        &trans                   &kp HOME                 &kp PG_UP        &trans
+&kp LEFT_CONTROL  &kp LEFT_WIN        &kp LEFT_ALT          &mkp MCLK       &mo 1          &mo 2           &mo 3             &mkp LCLK     &mkp RCLK                &kp END                  &kp PG_DN        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -76,11 +76,11 @@
 
         FUNCTION_LAYER {
             bindings = <
-&kp F1  &kp F2          &kp F3        &kp F4        &kp F5        &kp F6        &kp F7     &kp F8     &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans        &bt BT_CLR    &trans        &trans        &bt BT_NXT  &trans  &trans  &trans  &trans  &trans
+&kp F1  &kp F2          &kp F3        &kp F4        &kp F5        &kp F6        &kp F7      &kp F8   &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans      &trans   &trans  &trans   &trans   &trans
+&trans  &trans          &trans        &trans        &trans        &trans        &trans      &trans   &trans  &trans   &trans   &trans
+&trans  &bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans      &trans   &trans  &trans   &trans   &trans
+&trans  &trans          &trans        &bt BT_CLR    &trans        &trans        &bt BT_NXT  &trans   &trans  &trans   &trans   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_UP>;
