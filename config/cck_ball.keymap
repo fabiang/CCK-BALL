@@ -52,11 +52,11 @@
 
         QWERTZ {
             bindings = <
-&kp ESC           &kp DE_N1      &kp DE_N2     &kp DE_N3   &kp DE_N4  &kp DE_N5  &kp DE_N6      &kp DE_N7  &kp DE_N8     &kp DE_N9       &kp DE_N0        &kp BACKSPACE
-&kp TAB           &kp DE_Q       &kp DE_W      &kp DE_E    &kp DE_R   &kp DE_T   &kp DE_Z       &kp DE_U   &kp DE_I      &kp DE_O        &kp DE_P         &kp DE_U_UMLAUT
-&kp CAPSLOCK      &kp DE_A       &kp DE_S      &kp DE_D    &kp DE_F   &kp DE_G   &kp DE_H       &kp DE_J   &kp DE_K      &kp DE_L        &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&kp LEFT_SHIFT    &kp DE_Y       &kp DE_X      &kp DE_C    &kp DE_V   &kp DE_B   &kp DE_N       &kp DE_M   &kp DE_COMMA  &kp DE_DOT      &kp UP_ARROW     &kp DE_MINUS
-&kp LEFT_CONTROL  &kp LEFT_WIN   &kp LEFT_ALT  &kp DELETE  &mo 1      &mo 2      &kp RIGHT_ALT  &kp SPACE  &kp ENTER     &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW
+&kp ESC           &kp DE_N1      &kp DE_N2     &kp DE_N3   &kp DE_N4  &kp DE_N5   &kp DE_N6      &kp DE_N7  &kp DE_N8     &kp DE_N9       &kp DE_N0        &kp BACKSPACE
+&kp TAB           &kp DE_Q       &kp DE_W      &kp DE_E    &kp DE_R   &kp DE_T    &kp DE_Z       &kp DE_U   &kp DE_I      &kp DE_O        &kp DE_P         &kp DE_U_UMLAUT
+&kp CAPSLOCK      &kp DE_A       &kp DE_S      &kp DE_D    &kp DE_F   &kp DE_G    &kp DE_H       &kp DE_J   &kp DE_K      &kp DE_L        &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&kp LEFT_SHIFT    &kp DE_Y       &kp DE_X      &kp DE_C    &kp DE_V   &kp DE_B    &kp DE_N       &kp DE_M   &kp DE_COMMA  &kp DE_DOT      &kp UP_ARROW     &kp DE_MINUS
+&kp LEFT_CONTROL  &kp LEFT_WIN   &kp LEFT_ALT  &mo 1       &mo 2      &kp DELETE  &kp RIGHT_ALT  &kp SPACE  &kp ENTER     &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -64,11 +64,11 @@
 
         QWERTZ_EXTRA {
             bindings = <
-&kp DE_CARET      &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_SECTION  &kp DE_DOLLAR  &kp DE_PERCENT  &kp DE_AMPERSAND  &kp DE_SLASH  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS &kp DE_EQUAL     &kp DE_ESZETT
-&trans            &kp DE_AT           &trans                &kp DE_EURO     &trans         &trans          &trans            &trans        &kp DE_LBRC              &kp DE_RBRC              &trans           &kp DE_PLUS
+&kp F1            &kp F2              &kp F3                &kp F4          &kp F5         &kp F6          &kp F7            &kp F8        &kp F9                   &kp F10                  &kp F11          &kp F12
+&trans            &trans              &trans                &trans          &trans         &trans          &trans            &trans        &trans                   &trans                   &kp DE_CARET     &kp DE_ESZETT
 &trans            &trans              &trans                &trans          &trans         &trans          &trans            &trans        &trans                   &trans                   &trans           &kp DE_GRAVE
-&trans            &kp DE_LESS_THAN    &trans                &trans          &trans         &trans          &trans            &trans        &trans                   &kp HOME                 &kp PG_UP        &kp DE_BACKSLASH
-&kp LEFT_CONTROL  &kp LEFT_WIN        &kp LEFT_ALT          &mkp MCLK       &mo 1          &mo 2           &trans            &mkp LCLK     &mkp RCLK                &kp END                  &kp PG_DN        &kp DE_PIPE
+&trans            &kp DE_LESS_THAN    &trans                &trans          &trans         &trans          &trans            &trans        &trans                   &kp HOME                 &kp PG_UP        &kp DE_PLUS
+&kp LEFT_CONTROL  &kp LEFT_WIN        &kp LEFT_ALT          &mo 1           &mo 2          &trans          &kp RIGHT_ALT     &mkp LCLK     &mkp RCLK                &kp END                  &kp PG_DN        &kp DE_HASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -76,7 +76,7 @@
 
         FUNCTION_LAYER {
             bindings = <
-&kp F1  &kp F2          &kp F3        &kp F4        &kp F5        &kp F6        &kp F7      &kp F8   &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans          &trans        &trans        &trans        &trans        &trans      &trans   &trans  &trans   &trans   &trans
 &trans  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans      &trans   &trans  &trans   &trans   &trans
 &trans  &trans          &trans        &trans        &trans        &trans        &trans      &trans   &trans  &trans   &trans   &trans
 &trans  &bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans      &trans   &trans  &trans   &trans   &trans
