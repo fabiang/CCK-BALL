@@ -8,3 +8,6 @@ insert_final_newline = true
 charset = utf-8
 end_of_line = lf
 tab_width = 4
+
+[*.keymap]
+indent_style = tab

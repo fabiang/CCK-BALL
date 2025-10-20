@@ -14,18 +14,36 @@
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
-    acceleration-exponent = <0>;      // 0
-    time-to-max-speed-ms = <300>;       // 300
-    delay-ms = <0>;                   // 0
+    acceleration-exponent	= <0>;		// 0
+    time-to-max-speed-ms 	= <300>;	// 300
+    delay-ms				= <0>;		// 0
 };
 
 &mmv {
-    time-to-max-speed-ms = <500>;
-    acceleration-exponent = <1>;
-    trigger-period-ms = <16>;
+    time-to-max-speed-ms 	= <500>;
+    acceleration-exponent	= <1>;
+    trigger-period-ms		= <16>;
 };
 
 &soft_off { hold-time-ms = <2000>; };
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        combo_left_bootloader {
+            timeout-ms = <50>;
+            key-positions = <0 12 24 36 48>; // Most left keys
+            bindings = <&bootloader>;
+        };
+
+        combo_right_bootloader {
+            timeout-ms = <50>;
+            key-positions = <11 23 35 47 63>;  // Most right keys
+            bindings = <&bootloader>;
+        };
+    };
+};
 
 / {
     scroll_vertical_encoder: scroll_vertical_encoder {
@@ -52,38 +70,38 @@
 
         QWERTZ {
             bindings = <
-&kp ESC           &kp DE_N1      &kp DE_N2     &kp DE_N3   &kp DE_N4  &kp DE_N5   &kp DE_N6      &kp DE_N7  &kp DE_N8      &kp DE_N9       &kp DE_N0        &kp BACKSPACE
-&kp TAB           &kp DE_Q       &kp DE_W      &kp DE_E    &kp DE_R   &kp DE_T    &kp DE_Z       &kp DE_U   &kp DE_I       &kp DE_O        &kp DE_P         &kp DE_U_UMLAUT
-&kp CAPSLOCK      &kp DE_A       &kp DE_S      &kp DE_D    &kp DE_F   &kp DE_G    &kp DE_H       &kp DE_J   &kp DE_K       &kp DE_L        &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&kp LEFT_SHIFT    &kp DE_Y       &kp DE_X      &kp DE_C    &kp DE_V   &kp DE_B    &kp DE_N       &kp DE_M   &kp DE_COMMA   &kp DE_DOT      &kp UP_ARROW     &kp DE_MINUS
-&kp LEFT_CONTROL  &kp LEFT_WIN   &kp LEFT_ALT  &mo 1       &mo 2      &kp DELETE  &kp ENTER      &kp SPACE  &kp RIGHT_ALT  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW
+&kp ESC				&kp DE_N1		&kp DE_N2		&kp DE_N3	&kp DE_N4	&kp DE_N5	&kp DE_N6	&kp DE_N7	&kp DE_N8		&kp DE_N9		&kp DE_N0		&kp BACKSPACE
+&kp TAB				&kp DE_Q		&kp DE_W		&kp DE_E	&kp DE_R	&kp DE_T	&kp DE_Z	&kp DE_U	&kp DE_I		&kp DE_O		&kp DE_P		&kp DE_U_UMLAUT
+&kp CAPSLOCK		&kp DE_A		&kp DE_S		&kp DE_D	&kp DE_F	&kp DE_G	&kp DE_H	&kp DE_J	&kp DE_K		&kp DE_L		&kp DE_O_UMLAUT	&kp DE_A_UMLAUT
+&kp LEFT_SHIFT		&kp DE_Y		&kp DE_X		&kp DE_C	&kp DE_V	&kp DE_B	&kp DE_N	&kp DE_M	&kp DE_COMMA	&kp DE_DOT		&kp UP_ARROW	&kp DE_MINUS
+&kp LEFT_CONTROL	&kp LEFT_WIN	&kp LEFT_ALT	&mo 1		&mo 2		&kp DELETE	&kp ENTER	&kp SPACE	&kp RIGHT_ALT	&kp LEFT_ARROW	&kp DOWN_ARROW	&kp RIGHT_ARROW
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN	&inc_dec_kp PG_UP PG_DN>;
         };
 
         QWERTZ_EXTRA {
             bindings = <
-&kp F1            &kp F2              &kp F3                &kp F4          &kp F5         &kp F6          &kp F7            &kp F8        &kp F9                   &kp F10                  &kp F11          &kp F12
-&trans            &trans              &trans                &trans          &trans         &trans          &trans            &trans        &trans                   &trans                   &kp DE_CARET     &kp DE_ESZETT
-&trans            &trans              &trans                &trans          &trans         &trans          &trans            &trans        &trans                   &trans                   &trans           &kp DE_GRAVE
-&trans            &kp DE_LESS_THAN    &trans                &trans          &trans         &trans          &trans            &trans        &trans                   &kp HOME                 &kp PG_UP        &kp DE_PLUS
-&kp LEFT_CONTROL  &kp LEFT_WIN        &kp LEFT_ALT          &mo 1           &mo 2          &trans          &mkp LCLK         &mkp RCLK     &kp RIGHT_ALT            &kp END                  &kp PG_DN        &kp DE_HASH
+&kp F1				&kp F2				&kp F3			&kp F4	&kp F5	&kp F6	&kp F7		&kp F8		&kp F9			&kp F10		&kp F11			&kp F12
+&trans				&trans				&trans			&trans	&trans	&trans	&trans		&trans		&trans			&trans		&kp DE_CARET	&kp DE_ESZETT
+&trans				&trans				&trans			&trans	&trans	&trans	&trans		&trans		&trans			&trans		&trans			&kp DE_GRAVE
+&trans				&kp DE_LESS_THAN	&trans			&trans	&trans	&trans	&trans		&trans		&trans			&kp HOME	&kp PG_UP		&kp DE_PLUS
+&kp LEFT_CONTROL	&kp LEFT_WIN		&kp LEFT_ALT	&mo 1	&mo 2	&trans	&mkp LCLK	&mkp RCLK	&kp RIGHT_ALT	&kp END		&kp PG_DN		&kp DE_HASH
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN	&inc_dec_kp PG_UP PG_DN>;
         };
 
         FUNCTION_LAYER {
             bindings = <
-&bootloader  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans      &trans   &trans  &trans   &bt BT_SEL 0  &bootloader
-&trans       &trans          &trans        &trans        &trans        &trans  &trans      &trans   &trans  &trans   &trans        &trans
-&trans       &trans          &trans        &trans        &trans        &trans  &trans      &trans   &trans  &trans   &trans        &trans
-&trans       &bt BT_CLR_ALL  &trans        &trans        &trans        &trans  &trans      &trans   &trans  &trans   &trans        &trans
-&trans       &trans          &trans        &bt BT_CLR    &trans        &trans  &bt BT_NXT  &trans   &trans  &trans   &trans        &trans
+&trans	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4	&trans	&trans		&trans	&trans	&trans	&bt BT_SEL 0	&trans
+&trans	&trans			&trans			&trans			&trans			&trans	&trans		&trans	&trans	&trans	&trans			&trans
+&trans	&trans			&trans			&trans			&trans			&trans	&trans		&trans	&trans	&trans	&trans			&trans
+&trans	&bt BT_CLR_ALL	&trans			&trans			&trans			&trans	&trans		&trans	&trans	&trans	&trans			&trans
+&trans	&trans			&trans			&bt BT_CLR		&trans			&trans	&bt BT_NXT	&trans	&trans	&trans	&trans			&trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN	&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
