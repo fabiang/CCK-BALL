@@ -32,13 +32,13 @@
         compatible = "zmk,combos";
 
         combo_left_bootloader {
-            timeout-ms = <50>;
+            timeout-ms = <200>;
             key-positions = <0 12 24 36 48>; // Most left keys
             bindings = <&bootloader>;
         };
 
         combo_right_bootloader {
-            timeout-ms = <50>;
+            timeout-ms = <200>;
             key-positions = <11 23 35 47 63>;  // Most right keys
             bindings = <&bootloader>;
         };
