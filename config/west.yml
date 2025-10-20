@@ -17,6 +17,5 @@ manifest:
     - name: zmk-locales
       remote: zmk-locales
       revision: main
-      
   self:
     path: config
