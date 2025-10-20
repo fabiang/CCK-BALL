@@ -28,24 +28,6 @@
 &soft_off { hold-time-ms = <2000>; };
 
 / {
-	combos {
-		compatible = "zmk,combos";
-
-		combo_left_softoff {
-			timeout-ms = <200>;
-			key-positions = <0 12 24 36 48>; // most left keys
-			bindings = <&soft_off>;           // Soft-Off instead of Bootloader
-		};
-
-		combo_right_softoff {
-			timeout-ms = <200>;
-			key-positions = <11 23 35 47 63>;  // most right keys
-			bindings = <&soft_off>;            // Soft-Off instead of Bootloader
-		};
-	};
-};
-
-/ {
 	scroll_vertical_encoder: scroll_vertical_encoder {
 		compatible = "zmk,behavior-sensor-rotate";
 		#sensor-binding-cells = <0>;
